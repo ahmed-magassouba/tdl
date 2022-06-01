@@ -44,16 +44,14 @@ body {
     /* background-color: red; */
 }
 
-
-
 .container.active .forms {
-    height: 634px;
+  height: 700px;
 }
 
 .container .form {
     width: 50%;
     padding: 30px;
-    background-color: #fff;
+    /* background-color: #fff; */
     transition: margin-left 0.2s ease;
 }
 
@@ -138,6 +136,11 @@ body {
     right: 0;
     cursor: pointer;
     padding: 10px;
+}
+
+form .error {
+    color:red;
+    display: none;
 }
 
 .form .checkbox-text {

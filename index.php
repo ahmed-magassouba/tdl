@@ -29,14 +29,24 @@
                     <span class="title">Connexion</span>
 
                     <form action="#">
+
                         <div class="input-field">
                             <input type="email" name="email" placeholder="Entez votre email" required>
                             <i class="uil uil-envelope-alt icon"></i>
                         </div>
+                        <div class="error">
+                            <i class="uil uil-exclamation-octagon error-icon"></i>
+                            <span>gfdhfghfghgfhgfhfgfhfg</span>
+                        </div>
+
                         <div class="input-field">
-                            <input type="password" class="password" name="mdp"  placeholder="Entez votre mot de passe" required>
+                            <input type="password" class="password" name="mdp" placeholder="Entez votre mot de passe" required>
                             <i class="uil uil-lock-alt icon"></i>
                             <i class="uil uil-eye-slash showHide"></i>
+                        </div>
+                        <div class="error">
+                            <i class="uil uil-exclamation-octagon error-icon"></i>
+                            champ vide
                         </div>
 
                         <div class="checkbox-text">
@@ -68,26 +78,51 @@
 
                     <form action="#">
                         <div class="input-field">
-                            <input type="text" name="firstName"  placeholder="Entez votre prénom" required>
+                            <input type="text" name="firstName" placeholder="Entez votre prénom" required>
                             <i class="uil uil-user"></i>
                         </div>
+                        <div class="error">
+                            <i class="uil uil-exclamation-octagon error-icon"></i>
+                            champ vide
+                        </div>
+
                         <div class="input-field">
-                            <input type="text" name="lastName"  placeholder="Entez votre nom" required>
+                            <input type="text" name="lastName" placeholder="Entez votre nom" required>
                             <i class="uil uil-user"></i>
                         </div>
+                        <div class="error">
+                            <i class="uil uil-exclamation-octagon error-icon"></i>
+                            champ vide
+                        </div>
+
                         <div class="input-field">
                             <input type="email" name="email" placeholder="Entez votre email" required>
                             <i class="uil uil-envelope-alt icon"></i>
                         </div>
+                        <div class="error">
+                            <i class="uil uil-exclamation-octagon error-icon"></i>
+                            champ vide
+                        </div>
+
                         <div class="input-field">
-                            <input type="password" class="password" name="mdp"  placeholder="Entez votre mot de passe" required>
+                            <input type="password" class="password" name="mdp" placeholder="Entez votre mot de passe" required>
                             <i class="uil uil-lock-alt icon"></i>
                         </div>
+                        <div class="error">
+                            <i class="uil uil-exclamation-octagon error-icon"></i>
+                            champ vide
+                        </div>
+
                         <div class="input-field">
-                            <input type="password" class="password" name="mdp2"  placeholder="Confirmez votre mot de passe" required>
+                            <input type="password" class="password" name="mdp2" placeholder="Confirmez votre mot de passe" required>
                             <i class="uil uil-lock-alt icon"></i>
                             <i class="uil uil-eye-slash showHide"></i>
                         </div>
+                        <div class="error">
+                            <i class="uil uil-exclamation-octagon error-icon"></i>
+                            champ vide
+                        </div>
+                        
                         <div class="input-field button">
                             <input type="button" value="S'inscrire" id="email">
                         </div>
