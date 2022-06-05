@@ -29,34 +29,59 @@
     <main>
 
         <!-- ======= formulaire ======= -->
-        <form>
-            <input type="text" name="text" id="text" placeholder="Ajouter une tache..." minlength="5">
-            <input type="submit" value="Ajouter" id="add">
-        </form>
+       
+            <input type="text" name="text" id="text" placeholder="Ajouter une tache...">
+            <div class="priority">
+                <label for="prio">
+                    <input type="radio" name="grade" id="prio">
+                    Prioritaire
+                </label>
 
+                <label for="op">
+                    <input type="radio" name="grade" id="op">
+                    Optionnel
+                </label>
+
+                <button id="addButton">Ajouter</button>
+            </div>
+      
         <!-- ======= liste des taches ======= -->
         <div class="container">
 
             <!-- ======= section des nouvelles taches ======= -->
             <section class="newTask">
                 <h3>Nouvelle tâche</h3>
-                <ul>
-                </ul>
+                <ol class="newTaskList">
+                    <!-- <li>
+                        tache
+                       <button><i class="uil uil-trash-alt supp"></i></button> 
+                       <button> <i class="uil uil-check-circle valid"></i></button>
+                    </li> -->
+                </ol>
             </section>
 
 
             <!-- ======= section des taches non complete ======= -->
             <section class="taskNotComp">
                 <h3>Tâche en cours</h3>
-                <ul>
-                </ul>
+                <ol class="taskNotCompList">
+                    <!-- <li>
+                        tache
+                        <i class="uil uil-trash-alt supp"></i>
+                        <i class="uil uil-check-circle valid"></i>
+                    </li> -->
+                </ol>
             </section>
 
             <!-- ======= section des taches complete ======= -->
             <section class="taskComp">
                 <h3>Tâche complète</h3>
-                <ul>
-                </ul>
+                <ol class="taskCompList">
+                    <!-- <li>
+                        tache
+                        <i class="uil uil-trash-alt supp"></i>
+                    </li> -->
+                </ol>
             </section>
 
         </div>

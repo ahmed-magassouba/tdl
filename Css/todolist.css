@@ -1,6 +1,145 @@
-main{
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+}
+
+
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+
+
+input[type="text"] {
+    width: 80%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #666;
+    margin-top: 40px;
+}
+
+.priority {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-top: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-top: 40px;
+
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #666;
+    border-radius: 6px;
+    margin-top: 10px;
+    width: 90%;
+}
+
+section h3 {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px 6px 0 0;
+    text-align: center;
+    background-color: #666;
+}
+
+section ol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    counter-reset: my-counter;
+}
+
+section li {
+    position: relative;
+    list-style: none;
+    width: 90%;
+    padding: 15px 6px;
+    margin: 8px 0;
+    border-radius: 6px;
+    counter-increment: my-counter;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+ol li::before {
+    content: counter(my-counter);
+    border-radius: 50%;
+    background-color: #666;
+    width: 1rem;
+    height: 1rem;
+    display: inline-block;
+    line-height: 1rem;
+    text-align: center;
+    color: #fff;
+    margin-right: 5px;
+}
+
+li button {
+    float: right;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.taskNotComp li {
+    background-color: #0059ff;
+}
+
+.taskComp li {
+    background-color: #09ff00;
+}
+
+.supp {
+    color: #f50a0ade;
+    font-size: 17px;
+}
+
+.valid {
+    color: #09ff00;
+    margin-right: 10px;
+    font-size: 17px;
+}
+
+.creationDate,
+.endDate {
+    position: absolute;
+    background: #666;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 0;
+}
+
+.creationDate {
+    top: 0;
+    left: 0;
+    border-radius: 6px 6px 0 0;
+}
+
+.endDate {
+    bottom: 0;
+    left: 0;
+    border-radius:0 0 6px 6px ;
 }
